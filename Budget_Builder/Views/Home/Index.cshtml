@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row p-3 " style="background-color: aquamarine;">
+    <div class="input-div bg-white p-2">
+        <div class="title-text text-primary fs-3 fw-semibold">Budget Calculator</div>
+        <div class="d-flex justify-content-start">
+            <div class="form-floating me-3">
+                <input type="date" id="startDate" placeholder="Start date"  class="m-2 w-100 form-control p-2 ">
+                <label for="startDate"> start Date</label>
+            </div>
+            <div class="form-floating me-3">
+                <input type="date" id="endDate" class="m-2 w-100 form-control p-2 " placeholder="End date">
+                <label for="endDate">end Date</label>
+            </div>
+            <div class="btn btn-primary m-2 d-flex align-items-center">Generate</div>
+            <div class="btn btn-secondary m-2 d-flex align-items-center">Reset</div>
+            <div class="btn btn-secondary m-2 d-flex align-items-center">Export</div>
+
+        </div>
+    </div>
+
+    <div class="data-entries bg-white mt-4">
+        <div>
+            <table id="example" class="table display">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Jan-2024</th>
+                        <th>Delete</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Enter Income"></td>
+                        <td>0</td>
+                        <td><i class="bi bi-trash text-danger"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
