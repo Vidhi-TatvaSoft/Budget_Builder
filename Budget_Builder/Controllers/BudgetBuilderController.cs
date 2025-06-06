@@ -80,7 +80,7 @@ public class BudgetBuilderController : Controller
 
 
 
-        return PartialView("_DataSheetPartial", dataViewModel);
+        return PartialView("_DataSheetPartialJs", dataViewModel);
     }
     #endregion
 
