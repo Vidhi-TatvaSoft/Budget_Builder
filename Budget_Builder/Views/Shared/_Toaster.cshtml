@@ -1,23 +1,20 @@
 <script>
 
-    function successToaster(text) {
+    function Toaster(text, type = "success", closeButton = true, progressBar=true,timeOut="2000") {
         toastr.options = {
-            "closeButton": true,
-            "progressBar": true,
-            "timeOut": "2000"
+            "closeButton": closeButton,
+            "progressBar": progressBar,
+            "timeOut": timeOut
         };
-        toastr.success(text);
+        switch(type){
+            case "sucess": toastr.success(text);
+            break;      
+            case "error": toastr.error(text);
+            break;
+            default: toastr.success(text);
+        }
+        
     }
 
-    function errorToaster(text) {
-        console.log("errrr");
-        toastr.options = {
-            "closeButton": true,
-            "progressBar": true,
-            "timeOut": "2000"
-        };
-
-        toastr.error(text);
-    }
 
 </script>

@@ -44,7 +44,7 @@ html {
 .headcol {
   position: -webkit-sticky;
   position: sticky;
-  background-color: #d7dcdd !important;
+  background-color: #f4f7f8 !important;
   width: 200px !important;
   min-width: 200px !important;
   max-width: 200px !important;
@@ -52,10 +52,41 @@ html {
 
 }
 
-.subcol {
-  left: 500px !important;
+.lastcol {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #f4f7f8 !important;
+  width: 100px !important;
+  min-width: 100px !important;
+  max-width: 100px !important;
+  right: 0;
 }
 
+.subcol {
+  left: 500px !important;
+  right: 200px !important;
+}
+
+@media (max-width: 700px) {
+  .headcol {
+    position: relative;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .lastcol {
+    position: relative;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .subcol {
+    left: auto !important;
+    right: auto !important;
+  }
+}
 
 /* .btn-reset{
   background-color: rgba(174, 206, 224, 0.205);
